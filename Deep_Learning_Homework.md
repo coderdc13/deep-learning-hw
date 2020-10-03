@@ -1,6 +1,9 @@
 # Deep Learning Homework
 
 
+
+
+
 Closing Price Model
 
 
@@ -47,6 +50,8 @@ Window Size 1
 
 
 Fear and Greed (FNG)
+
+
 Window Size 10
 5/5 [==============================] - 0s 5ms/step - loss: 0.1219
 0.12194053828716278
@@ -86,3 +91,14 @@ Window Size 2
 Window Size 1
 6/6 [==============================] - 0s 3ms/step - loss: 0.1117
 0.11165456473827362
+
+
+
+> Which model has a lower loss?
+From the data above for loss, one can note that the closing price model has a lower loss.
+>
+> Which model tracks the actual values better over time?
+In terms of tracking values over time, from the data in the graphs, one can see that the closing price model tracks the actual values better over time.
+>
+> Which window size works best for the model?
+The data for loss and window size are provided above. After running each of the models for each window size from ten to one, the losses were recorded. In general, the loss was the least with the smallest window size (window size equal to one) for each model.
