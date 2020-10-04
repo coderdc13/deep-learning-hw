@@ -3,8 +3,12 @@
 
 # Introduction
 
-This assignment calls for leveraging recurrent neural networks in the comparison of prediction models for bitcoin prices. Recurrent neural networks in general may have different structures and applications (https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks). Also, one can consider the long short term memory (LSTM) recurrent neural network (RNN) as a methodology that "allows learning of long-term dependencies" (http://pages.cs.wisc.edu/~shavlik/cs638/lectureNotes/Long%20Short-Term%20Memory%20Networks.pdf). LSTM RNNs have been leveraged for predictive financial models (http://cs230.stanford.edu/projects_fall_2019/reports/26254244.pdf).
+This assignment calls for leveraging recurrent neural networks in the comparison of prediction models for bitcoin prices. Recurrent neural networks in general may have different structures and applications (https://www.cs.toronto.edu/~tingwuwang/rnn_tutorial.pdf). Also, one can consider the long short term memory (LSTM) recurrent neural network (RNN) as a methodology that "allows learning of long-term dependencies" (http://pages.cs.wisc.edu/~shavlik/cs638/lectureNotes/Long%20Short-Term%20Memory%20Networks.pdf). LSTM RNNs have been leveraged for predictive financial models (http://cs230.stanford.edu/projects_fall_2019/reports/26254244.pdf).
 
+
+# Data Analysis and Data Processing
+
+The data was drawn from the comma separated value (CSV) files. Then the data was processed through the models. The data analysis and data processing are recorded in the Jupyter notebooks. In addition, for different window sizes, losses were recorded by the student author (me, Franklin Bueno).
 
 
 ## Window Sizes and Loss
@@ -150,3 +154,7 @@ In terms of tracking values over time, from the data in the graphs, one can see 
 >
 > Which window size works best for the model?
 The data for loss and window size are provided above. After running each of the models for each window size from ten to one, the losses were recorded. In general, the loss was the least with the smallest window size (window size equal to one) for each model. It is worthy to note that with window size equal to one for each model, the loss was less for the student author than for the starter code (closing price model was loss 0.0267 for the student author and 0.0487 for the starter code, and fear and greed model was loss 0.1117 for the student author and 0.1911 for the starter code).
+
+
+### Note
+It is important to note that 99.9999% of this work comes from other sources, especially Instructor GS, Instructor AN, Instructor KS, the Tutor, Ms. LT, and the gold price prediction class exercise. The methodology for the 70/30 split of the data was taken from the gold price prediction class exercise. Also, the methodology for the training structure was taken from the gold price prediction class exercise.
